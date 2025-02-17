@@ -80,7 +80,7 @@ async function logBroadcastStatus(broadcasterId, status) {
     await GM.setValue(logKey, logs);  
 }
 
-// 방송 상태 체크 함수 (AfecatV API 호출)  
+// 방송 상태 체크 함수  
 async function fetchAfreecaLive(afreecaId) {  
     return new Promise((resolve, reject) => {  
         GM.xmlHttpRequest({  
